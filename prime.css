@@ -27,7 +27,12 @@ input{
     border-radius: .8vw;
 }
 
-
-
-
+.result,
+.factor-tree {
+    flex: 1;
+    display: inline;
+    padding: 10px;
+    border: none;
+    left: 0;
+}
 
