@@ -14,12 +14,13 @@
     <p>To begin, insert a number up to 15 digits long.</p>
     <p>Note that 1 is not a prime number.</p>
     <p>Factors are separated by a comma.</p>
-    <input type="number" id="inputNumber" min="0" pattern="\d{1,6}" required>
+    <input type="number" id="inputNumber" min="0" required>
     <button onclick="generateFactors()">Generate!</button>
     <button onclick="generateFactorTree()">Visualize!</button>
-    <div class="result" id="result"></div>
-    <div class="result2" id="result2"></div>
-    <div id="factorTree"></div>
+    <div class="container">
+        <div class="result" id="result"></div>
+        <div class="factor-tree" id="factorTree"></div>
+    </div>
+</html>
+    </main>   
     </body>
-    </main>
-  </html>
