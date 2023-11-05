@@ -1,9 +1,9 @@
-// Function to calculate factors of a number
+// function to calculate factors of a number
 function factorization(num) {
     const factors = [];
     for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
         while (num % i === 0) {
-            factors.push(i); //Push factor into array
+            factors.push(i); // push factor into array
             num /= i; 
         }
     }
@@ -18,9 +18,9 @@ function generateFactorTree() {
     const input = document.getElementById('inputNumber');
     const number = parseInt(input.value);
     const factorTreeContainer = document.getElementById('factorTree');
-    factorTreeContainer.innerHTML = ''; // Clear factor tree container
+    factorTreeContainer.innerHTML = ''; // clear factor tree container
 
-    // Check if the input is valid
+    // check if the input is valid
     if (isNaN(number) || input.value.length > 15 || number < 1) {
         alert('Please enter a valid number!');
     } else {
@@ -28,7 +28,7 @@ function generateFactorTree() {
         let num = number;
         factorTreeContainer.innerHTML += `<p>${num}</p>`; // show the original number
 
-        // Build the factor tree
+        // build the factor tree
         for (let i = 0; i < factors.length; i++) {
             num /= factors[i]; // update num
             if (num > 1) {
